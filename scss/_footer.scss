@@ -1,0 +1,48 @@
+footer {
+    background-image: linear-gradient(to top, #57388b, #633ea3);   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;      
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-area: footer;
+    .volver-arriba a {
+        color: white;
+        font-weight: 200;
+        transition: all 0.5s ease;
+        &:hover {
+            color: black; 
+        }
+    }
+    .redes-footer {
+        display: flex;
+        justify-content: space-evenly;
+        a {
+            margin: 10px;
+        }
+    }
+    .navegador-footer {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:center;
+        margin-top: 5px;
+        span a {
+            color: white;
+            font-weight: 100;
+            font-size: 15px;
+            border-left: 1px solid white;
+            padding: 7px 15px; 
+            transition: all 0.5s ease;
+            &:hover {
+                color: black;
+                border-left: 1px solid black;
+            } 
+        }  
+    }
+}
+
+
+
+

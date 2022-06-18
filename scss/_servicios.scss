@@ -1,0 +1,101 @@
+.main-servicios {
+    display: grid;
+    grid-template-areas: 
+    "titulo-promocion texto-promocion"
+    "imagen-promocion texto-promocion"
+    "enviar-dos enviar-dos"
+    "texto-curador titulo-curador"
+    "texto-curador imagen-curador";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 30vh auto auto;
+    margin:3% 5%;
+    .titulo-promocion {
+        grid-area: titulo-promocion;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 3%;       
+    }
+    .texto-promocion {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-weight: 400;
+        font-size: 21px;
+        text-align: justify;
+        letter-spacing:1.3px; 
+        line-height: 32px;
+        padding-left: 20px;
+        color: rgb(224, 224, 224);
+        grid-area: texto-promocion;    
+    }
+    .imagen-promocion {
+        grid-area: imagen-promocion;
+        display: flex;
+        img {
+            width: 100%;
+            height: auto;    
+        }
+    }
+    .enviar-dos {
+        grid-area: enviar-dos;
+        background-color: #633ea3;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:center;
+        align-items: center;
+        a {
+            padding: 2%;
+            color: white;
+            font-size: 1.3rem;
+            background-color: orangered;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            &:hover {
+                padding: 2.5%;
+                font-size: 1.4rem;
+                color: white;
+                background-color: #673ab7;
+                box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+                -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+                -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);  
+            } 
+        }
+    }
+    .titulo-curador {
+        font-size: 80px;
+        grid-area: titulo-curador;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 3%;
+        padding-right: 15%;      
+    }
+    .imagen-curador {
+        grid-area: imagen-curador;
+        display: flex;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .texto-curador {
+        font-weight: 400;
+        font-size: 21px;
+        text-align: justify;
+        letter-spacing:1.5px; 
+        line-height: 33px;
+        padding-right: 20px;
+        color: rgb(224, 224, 224);
+        grid-area: texto-curador;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }       
+}
+
+
+
+
+

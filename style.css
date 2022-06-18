@@ -306,12 +306,6 @@ main {
     padding-top: 30px; 
 }
 
-.main-canciones {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 7%;
-}
-
 
 .main-contacto h2 {
     font-size: 40Px;
