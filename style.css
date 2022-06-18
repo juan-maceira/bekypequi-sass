@@ -1,0 +1,1237 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;500;900&family=Roboto:ital,wght@0,300;0,700;0,900;1,100&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(224, 224, 224);
+    list-style-type: none;
+    font-family:'Heebo', 'Roboto', sans-serif;
+    text-decoration: none !important;   
+}
+
+body {
+    background-color: #633ea3;    
+    display: grid;
+    grid-template-areas:
+    "enviar enviar navegador" 
+    "header header header"
+    "main main main" 
+    "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 13vh 50vh auto 25vh;
+}
+
+.enviar {
+    background-color: #443264;
+    grid-area: enviar;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:left;
+    align-items: center;
+    padding-left: 2%;
+    
+    
+}
+
+.enviar a {
+    text-align: center;
+    padding: 2% 4%;
+    color: white;
+    font-size: 1.3rem;
+    background-color: #673ab7;
+    border-radius: 100px;
+    transition: all 0.5s ease;  
+}
+
+.enviar a:hover {
+    padding: 2.8% 4.8%;
+    font-size: 1.3rem;
+    color: white;
+    background-color: orangered;
+    box-shadow: -1px -1px 7px 6px rgba(0,0,0,0.16);
+    -webkit-box-shadow: -1px -1px 7px 6px rgba(0,0,0,0.16);
+    -moz-box-shadow: -1px -1px 7px 6px rgba(0,0,0,0.16);
+}
+
+
+.navbar-nav a {
+    color: white !important;
+    border-radius: 60px;
+    margin-left: 20px;
+    transition: all 0.8s ease;
+    padding: 5px 10px;
+}
+
+.navbar-nav a:hover {
+    border-radius: 60px;
+    background-color: aliceblue;
+    color: black !important;
+    box-shadow: -1px -1px 7px 6px rgba(0,0,0,0.16);
+    -webkit-box-shadow: -1px -1px 7px 6px rgba(0,0,0,0.16);
+    -moz-box-shadow: -1px -1px 7px 6px rgba(0,0,0,0.16);
+}
+
+.navegador {
+    background-color: #443264 !important;
+    grid-area: navegador;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;  
+}
+
+header { 
+    background-image: linear-gradient(to bottom, #443264 3%, #633ea3 100%); 
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;    
+}
+
+.logo-bekypequi {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    transition: all 0.5s ease; 
+    box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+    -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);             
+}
+
+.logo-bekypequi:hover {
+    width: 145px;
+    height: 145px;
+    box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+    -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+}
+
+
+h1 {
+    font-weight: 300;
+    font-size:50px;     
+}
+
+.subtitulo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.subtitulo h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 30px;
+    color: rgb(185, 174, 174);       
+}
+
+.logo-spotify {
+    margin-left: 8px;
+    margin-bottom: 6px;
+    background-color: green;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    
+}
+
+.logo-spotify:hover {
+    background-color: green;
+    padding: 5px;
+    box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+    -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67); 
+}
+
+
+/*######### MAIN ##################*/
+
+
+main {
+    grid-area: main;
+}
+
+.main-inicio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    margin-bottom:6vh;
+}
+
+.main-nosotros { 
+    border-top: 1px solid white;
+    padding: 3%;
+    margin: 0% 2%;
+}
+
+.main-nosotros h2 {
+    text-align: center;
+}
+
+.texto-nosotros {
+    margin: 5% 15%;
+    text-align: justify;
+    font-size: 25px;
+    letter-spacing:1.3px; 
+    line-height: 40px;
+}
+
+.texto-nosotros p {
+    margin-bottom: 20px;
+}
+
+.main-servicios {
+    display: grid;
+    grid-template-areas: 
+    "titulo-promocion texto-promocion"
+    "imagen-promocion texto-promocion"
+    "enviar-dos enviar-dos"
+    "texto-curador titulo-curador"
+    "texto-curador imagen-curador";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 30vh auto auto;
+    margin:3% 5%;       
+}
+
+.titulo-promocion {
+    grid-area: titulo-promocion;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 3%;       
+}
+
+.texto-promocion {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-weight: 400;
+    font-size: 21px;
+    text-align: justify;
+    letter-spacing:1.3px; 
+    line-height: 32px;
+    padding-left: 20px;
+    color: rgb(224, 224, 224);
+    grid-area: texto-promocion;    
+}
+
+.imagen-promocion {
+    grid-area: imagen-promocion;
+    display: flex;
+}
+
+.imagen-promocion img {
+    width: 100%;
+    height: auto;    
+}
+
+.enviar-dos {
+    grid-area: enviar-dos;
+    background-color: #633ea3;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:center;
+    align-items: center;
+}
+
+.enviar-dos a {
+    padding: 2%;
+    color: white;
+    font-size: 1.3rem;
+    background-color: orangered;
+    border-radius: 5px;
+    transition: all 0.3s ease; 
+}
+
+.enviar-dos a:hover {
+    padding: 2.5%;
+    font-size: 1.4rem;
+    color: white;
+    background-color: #673ab7;
+    box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+    -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);  
+}
+
+.titulo-curador {
+    font-size: 80px;
+    grid-area: titulo-curador;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 3%;
+    padding-right: 15%;      
+}
+
+.imagen-curador {
+    grid-area: imagen-curador;
+    display: flex;
+}
+
+.imagen-curador img {
+    width: 100%;
+    height: auto;
+}
+
+.texto-curador {
+    font-weight: 400;
+    font-size: 21px;
+    text-align: justify;
+    letter-spacing:1.5px; 
+    line-height: 33px;
+    padding-right: 20px;
+    color: rgb(224, 224, 224);
+    grid-area: texto-curador;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.main-playlist {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url(../recursos/pexels-dids-1644616.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: 80%;
+    background-attachment: fixed;
+    margin-bottom: 7%;
+    margin-top: 50px;
+}
+
+.main-playlist h2{
+    text-align: center;
+    font-size: 40Px;
+    padding-top: 30px; 
+}
+
+.main-canciones {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7%;
+}
+
+
+.main-contacto h2 {
+    font-size: 40Px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-contacto form {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+    align-items: center;
+}
+
+.contenedor-playlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;   
+}
+
+
+.caja-playlist {
+    height: 100vh;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;       
+}
+
+.caja-playlist iframe {
+    height: 80vh;
+    width: 100%;
+}
+
+.caja-playlist h3 {
+    margin-top: 3%;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.caja-playlist h3 a {
+    color: white;
+}
+
+.caja-canciones {
+    padding: 30px;    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;   
+}
+
+.caja-canciones iframe {
+    width: 100%;
+    height: 80px;
+    border-radius: 12px;
+}
+
+
+.indice-playlist ul li a {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 30px;
+    padding: 3% 6%; 
+    border-style: solid;
+    border-width: 1Px;
+    transition: all 0.5s ease;          
+}
+
+.indice-playlist ul li a:hover {
+    background-color: rgb(23, 139, 23);
+    border-color: white; 
+    text-shadow: 3px 3px 3px black;
+    padding:4% 7%;   
+}
+
+
+.indice-playlist ul li { 
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    margin-bottom: 0px;
+}
+
+.indice-playlist ul {
+    display: grid; 
+    grid-template-columns: repeat(3, 20%);
+    justify-content: center;
+    grid-column-gap: 30px;
+}
+
+
+.texto-canciones {
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    margin: 0% 2%;
+}
+
+
+
+ /************* FOOTER *****************/
+
+/* ETIQUETAS*/
+
+footer {
+    background-image: linear-gradient(to top, #57388b, #633ea3);   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;      
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-area: footer;      
+}
+
+
+/* CLASES */
+
+.volver-arriba a {
+    color: white;
+    font-weight: 200;
+    transition: all 0.5s ease;
+}
+
+.volver-arriba a:hover {
+    color: black; 
+}
+
+.redes-footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.redes-footer a {
+    margin: 10px;
+}
+
+.navegador-footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:center;
+    margin-top: 5px;  
+}
+
+.navegador-footer span a {
+    color: white;
+    font-weight: 100;
+    font-size: 15px;
+    border-left: 1px solid white;
+    padding: 7px 15px; 
+    transition: all 0.5s ease; 
+}
+
+.navegador-footer span a:hover {
+    color: black;
+    border-left: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+    /*############ DESKTOP 1024 / 1245 ###############*/
+
+@media (min-width: 993px) and (max-width: 1245px) {
+    
+    
+    .navegador ul li {
+        margin: 3%;   
+    }
+
+    .main-nosotros h2{
+        text-align: left;
+        font-size: 80px;
+        font-weight: 400;    
+    }
+    
+    .texto-nosotros {
+        margin-top: 30px;
+        font-size: 25px;
+        letter-spacing:1.3px; 
+        line-height: 40px;
+    }
+    
+    .main-servicios {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto 30vh auto auto;
+        margin: 5% 5%;        
+    }
+
+    .titulo-promocion {
+        font-size:65px;
+        line-height: 90px;      
+    }
+
+    .texto-promocion {
+        font-size: 17px;
+        letter-spacing:1px; 
+        line-height: 26px;       
+    }
+
+    .enviar-dos {
+        grid-area: enviar-dos;
+        background-color: #633ea3;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .enviar-dos a {
+        padding: 3%;
+        color: white;
+        font-size: 1.3rem;
+        background-color: orangered;
+        border-radius: 5px;
+        transition: all 0.5s ease; 
+    }
+
+    .enviar-dos a:hover {
+        padding: 4%;
+        font-size: 1.4rem;
+        color: white;
+        background-color: #673ab7;
+        box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);  
+    }
+
+    .titulo-curador {
+        font-size: 60px; 
+        line-height: 90px; 
+    }
+
+    .texto-curador {       
+        font-size: 17px;        
+        letter-spacing:1px; 
+        line-height: 28px;    
+    }
+}    
+
+
+
+
+
+
+
+
+
+
+/*############# TABLET 768 / 1023  ##################*/
+
+@media (min-width: 768px) and (max-width: 992px) {
+    body {           
+        grid-template-areas:
+        "navegador"
+        "enviar" 
+        "header"
+        "main" 
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 15vh 15vh 70vh auto 25vh; 
+    }
+
+    .enviar {
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .enviar a {
+        padding: 3%;
+        font-size: 1.2rem;       
+    }
+
+    .enviar a:hover {
+        padding: 3.5%;
+        font-size: 1.3rem;          
+    }
+ 
+    
+    
+    
+/********** MAIN **********/
+
+    
+
+    .main-inicio P {
+        font-size: 22px;      
+    }
+
+    .main-nosotros h2{
+        text-align: left;
+        font-size: 60px;
+        font-weight: 400;    
+    }
+    
+    .texto-nosotros {
+        margin-top: 30px;
+        font-size: 20px;
+        letter-spacing:1.3px; 
+        line-height: 30px;
+    }
+
+    .main-servicios {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto 25vh auto auto;
+        margin: 5% 5%;        
+    }
+
+    .titulo-promocion {
+        font-size:55px;
+        line-height: 70px;      
+    }
+
+    .texto-promocion {
+        font-size: 14px;
+        letter-spacing:1px; 
+        line-height: 20px;       
+    }
+
+    .enviar-dos {
+        grid-area: enviar-dos;
+        background-color: #633ea3;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .enviar-dos a {
+        padding: 3%;
+        color: white;
+        font-size: 1.3rem;
+    }
+
+    .enviar-dos a:hover {
+        padding: 4%;
+        font-size: 1.4rem; 
+    }
+
+    .titulo-curador {
+        font-size: 50px;
+        line-height: 70px;  
+    }
+
+    .texto-curador {       
+        font-size: 14px;        
+        letter-spacing:1px; 
+        line-height: 21px;    
+    }
+
+    .main-canciones h2 {
+        font-size: 30px;
+    }
+
+    .main-contacto h2 {
+        font-size: 30px;   
+    }
+
+    .caja-canciones {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(8, 1fr);       
+    }
+
+    .indice-playlist ul li a {
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 400;
+        border-radius: 30px;
+        padding: 3% 6%; 
+        border-style: solid;
+        border-width: 1Px;
+        transition: all 0.5s ease;          
+    }
+
+    .indice-playlist ul li a:hover {
+        background-color: rgb(23, 139, 23);
+        border-color: white; 
+        text-shadow: 3px 3px 3px black;
+        padding:4% 7%;   
+    }
+
+    .indice-playlist ul li { 
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 70px;
+        margin-bottom: 0px;
+    }
+
+    .indice-playlist ul {
+        grid-template-columns: repeat(3, 23%);
+    }
+
+    .texto-canciones {
+        font-size: 50px;  
+    }   
+}
+
+
+
+
+
+
+
+
+/*####################### TABLET 481 / 767 #######################*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    body {    
+        grid-template-areas:
+        "navegador enviar"
+        "header header" 
+        "main main" 
+        "footer footer";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows:  30vh 70vh  auto 25vh; 
+    }
+
+    .navegador ul {
+        flex-direction: column;
+        flex-wrap: nowrap;    
+    }
+
+    .navegador ul li {
+        margin: 2%;   
+    }
+    
+    .navegador ul li a {
+        font-size: 1rem;          
+    }
+
+    .navegador ul li a:hover { 
+        padding: 5px;   
+    }
+
+
+/************* HEADER **************/
+
+
+    h1 {
+        font-size:40px;     
+    }
+
+    h2 {
+        font-size: 25px;       
+    }
+
+
+/********** MAIN **********/
+
+    
+
+    .main-inicio P {
+        font-size: 20px;   
+    }
+
+    .main-nosotros h2{
+        text-align: left;
+        font-size: 40px;
+        font-weight: 400;    
+    }
+    
+    .texto-nosotros {
+        margin-top: 30px;
+        font-size: 17px;
+        letter-spacing:1.3px; 
+        line-height: 25px;
+    }
+
+    .texto-nosotros p {
+        margin-bottom: 10px;
+    }
+
+    .main-servicios {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto 25vh auto auto;
+        margin: 5% 5%;        
+    }
+
+    .titulo-promocion {
+        font-size:35px;
+        line-height: 50px;      
+    }
+
+    .texto-promocion {
+        text-align: left;
+        font-size: 12px;
+        letter-spacing:1px; 
+        line-height: 13px;       
+    }
+
+    .enviar-dos {
+        grid-area: enviar-dos;
+        background-color: #633ea3;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .enviar-dos a {
+        padding: 3%;
+        color: white;
+        font-size: 1.3rem;
+    }
+
+    .enviar-dos a:hover {
+        padding: 4%;
+        font-size: 1.4rem; 
+    }
+
+    .titulo-curador {
+        font-size: 35px;
+        line-height: 50px;   
+    }
+
+    .texto-curador { 
+        text-align: right;      
+        font-size: 12px;        
+        letter-spacing:1px; 
+        line-height: 13px;
+            
+    }
+
+    .main-playlist {
+        background-size: 100%;
+    }    
+
+    .main-playlist h2{
+        font-size: 25Px;   
+    }
+
+    .main-canciones h2 {
+        font-size: 25Px;  
+    }
+
+    .main-contacto h2 {
+        font-size: 25px;
+    }  
+
+    .caja-playlist h3 {
+        font-size: 25px;
+    }
+
+    .caja-canciones {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(11, 1fr);      
+    }
+
+    .caja-canciones iframe {
+        width: 100%;
+        height: 80px;
+    }
+
+    .indice-playlist ul li a {   
+        font-size: 1.1rem;             
+    }
+
+    .indice-playlist ul li { 
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        margin-bottom: 0px;rid 
+    }
+
+    .indice-playlist ul {
+        display: grid; 
+        grid-template-columns: repeat(2, 45%);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    .texto-canciones {
+        font-size: 38px;
+        margin-left: 20px;
+           
+    }
+
+
+    /************* FOOTER *****************/
+
+   
+
+    .volver-arriba a {
+        font-size: 13px;
+    }
+
+    .navegador-footer span a {
+        font-size: 10px;
+        padding-left: 10px;
+        padding-right: 10px;   
+    }
+
+    .navegador-footer span a:hover {
+        padding: 11px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*############## SMARTPHONE 480 ####################*/
+@media (max-width: 480px) {
+    body {    
+        grid-template-areas:
+        "navegador enviar"
+        "header header" 
+        "main main" 
+        "footer footer";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows:  25vh 60vh auto 25vh; 
+    }
+
+    .enviar {
+        padding-right:4%;
+    }
+
+    .enviar a {
+        padding: 4%;
+        font-size: 1rem; 
+    }
+
+    .enviar a:hover {
+        padding: 5%;
+        font-size: 1.1rem;  
+    }
+ 
+  
+
+/************* HEADER **************/
+
+    
+
+    h1 {
+        font-size:35px;     
+    }
+
+    h2 {
+        font-size: 20px;       
+    }
+
+    .logo-bekypequi {
+        width: 100PX;
+        height: 100PX;             
+    }
+
+    .logo-bekypequi:hover {
+        width: 105px;
+        height: 105px;
+    }
+
+    .subtitulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+   
+/********** MAIN **********/
+
+   
+    
+    .main-inicio P {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 17px;    
+    }
+
+    .main-nosotros {
+        margin: 5% 10%;
+    }
+
+    .main-nosotros h2{
+        text-align: left;
+        font-size: 30px;
+        font-weight: 400;    
+    }
+    
+    .texto-nosotros {
+        margin-top: 30px;
+        font-size: 15px;
+        letter-spacing:1.3px; 
+        line-height: 25px;
+    }
+
+    .texto-nosotros p {
+        margin-bottom: 10px;
+    }
+
+    .main-servicios {
+        grid-template-areas: 
+    "titulo-promocion titulo-promocion"
+    "texto-promocion texto-promocion"
+    "imagen-promocion imagen-promocion"
+    "enviar-dos enviar-dos"
+    "titulo-curador titulo-curador"
+    "texto-curador texto-curador"
+    "imagen-curador imagen-curador";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto 20vh auto auto;
+        margin: 5% 5%;        
+    }
+
+    .titulo-promocion {
+        font-size:35px;
+        line-height: 50px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-left: 20px;
+        padding-right: 20px;      
+    }
+
+    .texto-promocion {
+        text-align: justify;
+        font-size: 12px;
+        letter-spacing:1px; 
+        line-height: 13px;
+        padding: 5px 20px;       
+    }
+
+    .imagen-promocion {
+        grid-area: imagen-promocion;
+        display: none;
+    }
+
+    .enviar-dos {
+        grid-area: enviar-dos;
+        background-color: #633ea3;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .enviar-dos a {
+        padding: 3%;
+        color: white;
+        font-size: 1rem;
+    }
+
+    .enviar-dos a:hover {
+        padding: 4%;
+        font-size: 1.2rem; 
+    }
+
+    .titulo-curador {
+        padding-left: 20px;
+        padding-right: 20px; 
+        font-size: 35px;
+        line-height: 50px;
+           
+    }
+
+    .texto-curador { 
+        text-align: justify;      
+        font-size: 12px;        
+        letter-spacing:1px; 
+        line-height: 13px;
+        padding: 5px 20px;        
+    }
+
+    .imagen-curador {
+        grid-area: imagen-curador;
+        display: none;
+    }
+
+    .main-playlist {
+        background-image: linear-gradient(#633ea3, #633ea3);
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: 80%;
+        background-attachment: fixed;
+        margin-bottom: 7%;
+    }
+
+    .main-playlist h2{
+        font-size: 25Px;    
+    }
+
+    .main-canciones h2 {
+        font-size: 25Px;    
+    }
+
+    .main-contacto h2 {
+        font-size: 25Px;
+    }
+
+    .caja-playlist {
+        height: 100vh;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
+        margin-bottom: 3%;            
+    }
+
+    .caja-playlist h3 {
+        margin-top: 3%;
+        font-size: 17px;
+    }
+
+    .caja-canciones {
+        padding: 30px;       
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(11, 1fr);       
+    }
+
+    .caja-canciones iframe {
+        width: 100%;
+        height: 80px;
+    }
+
+    .indice-playlist ul li a {
+        font-size: 1rem;            
+    }
+
+    .indice-playlist ul li {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .indice-playlist ul {
+        display: grid; 
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(11, 1fr);
+        grid-column-gap: 30px;
+    }
+
+
+    .texto-canciones {
+        font-size: 25px;
+        margin-left: 20px;
+    }
+
+
+    /************* FOOTER *****************/
+
+    /* ETIQUETAS*/
+
+    footer { 
+        background-image: linear-gradient(to top, #633ea3, #633ea3 );       
+        padding-top: 10px;
+        padding-bottom: 10px;
+        grid-area: footer;
+        display: grid;
+        grid-template-areas: 
+        "volver"
+        "menu"
+        "redes";
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 80% 10%;
+        grid-row-gap: 20px;
+    }
+
+
+    /* CLASES */
+
+    .volver-arriba {
+        display: flex;
+        justify-content: center;
+        grid-area: volver;
+    }
+
+    .volver-arriba a {
+        font-size: 13px;       
+    }
+
+    .redes-footer {
+        grid-area: redes;
+        display: flex;
+        justify-content:center;
+        margin-top: 20px;
+    }
+
+    .redes-footer a {
+        margin: 10px;
+    }
+
+    .navegador-footer {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        grid-area: menu;        
+    }
+
+    .navegador-footer span a {
+        color: white;
+        font-weight: 100;
+        font-size: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-left: 0px solid white;
+          
+    }
+
+    .navegador-footer span a:hover {
+        color: orangered;
+    }
+}
