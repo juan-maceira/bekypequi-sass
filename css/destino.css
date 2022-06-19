@@ -105,6 +105,7 @@ header .subtitulo {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin: 0% 3%;
 }
 header .subtitulo h2 {
   text-align: center;
@@ -356,25 +357,25 @@ footer .navegador-footer span a:hover {
   margin-right: 20%;
   margin-top: 5%;
   margin-bottom: 3%;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .main-playlist .contenedor-playlist .caja-playlist h3 {
   margin-top: 5%;
-  font-weight: 300;
-  font-size: 40px;
 }
 .main-playlist .contenedor-playlist .caja-playlist h3 a {
   color: white;
+  font-weight: 300;
+  font-size: 30px;
 }
 .main-playlist .contenedor-playlist .caja-playlist iframe {
   height: 80vh;
-  width: 100%;
+  width: 90%;
 }
 .main-playlist .contenedor-playlist .caja-playlist h4 {
+  font-size: 15px;
   font-weight: 300;
 }
 .main-playlist .contenedor-playlist .caja-playlist h4 a {
@@ -466,51 +467,51 @@ footer .navegador-footer span a:hover {
     grid-template-columns: 1fr;
     grid-template-rows: 15vh 15vh 70vh auto 25vh;
   }
-  .enviar {
+  body .enviar {
     justify-content: center;
     padding-left: 0;
   }
-  .enviar a {
+  body .enviar a {
     padding: 3%;
     font-size: 1.2rem;
   }
-  .enviar a:hover {
+  body .enviar a:hover {
     padding: 3.5%;
     font-size: 1.3rem;
   }
-  .main-inicio .caja-canciones {
+  body .main-inicio .caja-canciones {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(8, 1fr);
   }
-  .main-inicio .texto-canciones {
+  body .main-inicio .texto-canciones {
     font-size: 50px;
   }
-  .main-nosotros h2 {
+  body .main-nosotros h2 {
     text-align: left;
     font-size: 60px;
     font-weight: 400;
   }
-  .main-nosotros .texto-nosotros {
+  body .main-nosotros .texto-nosotros {
     margin-top: 30px;
     font-size: 20px;
     letter-spacing: 1.3px;
     line-height: 30px;
   }
-  .main-servicios {
+  body .main-servicios {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto 25vh auto auto;
     margin: 5% 5%;
   }
-  .main-servicios .titulo-promocion {
+  body .main-servicios .titulo-promocion {
     font-size: 55px;
     line-height: 70px;
   }
-  .main-servicios .texto-promocion {
+  body .main-servicios .texto-promocion {
     font-size: 14px;
     letter-spacing: 1px;
     line-height: 20px;
   }
-  .main-servicios .enviar-dos {
+  body .main-servicios .enviar-dos {
     grid-area: enviar-dos;
     background-color: #633ea3;
     display: flex;
@@ -518,37 +519,37 @@ footer .navegador-footer span a:hover {
     justify-content: center;
     align-items: center;
   }
-  .main-servicios .enviar-dos a {
+  body .main-servicios .enviar-dos a {
     padding: 3%;
     color: white;
     font-size: 1.3rem;
   }
-  .main-servicios .enviar-dos a:hover {
+  body .main-servicios .enviar-dos a:hover {
     padding: 4%;
     font-size: 1.4rem;
   }
-  .main-servicios .titulo-curador {
+  body .main-servicios .titulo-curador {
     font-size: 50px;
     line-height: 70px;
   }
-  .main-servicios .texto-curador {
+  body .main-servicios .texto-curador {
     font-size: 14px;
     letter-spacing: 1px;
     line-height: 21px;
   }
-  .main-contacto h2 {
+  body .main-contacto h2 {
     font-size: 30px;
   }
-  .indice-playlist ul {
+  body .indice-playlist ul {
     grid-template-columns: repeat(3, 23%);
   }
-  .indice-playlist ul li {
+  body .indice-playlist ul li {
     display: flex;
     justify-content: space-evenly;
     margin-top: 70px;
     margin-bottom: 0px;
   }
-  .indice-playlist ul li a {
+  body .indice-playlist ul li a {
     color: white;
     font-size: 1.1rem;
     font-weight: 400;
@@ -558,7 +559,7 @@ footer .navegador-footer span a:hover {
     border-width: 1Px;
     transition: all 0.5s ease;
   }
-  .indice-playlist ul li a:hover {
+  body .indice-playlist ul li a:hover {
     background-color: rgb(23, 139, 23);
     border-color: white;
     text-shadow: 3px 3px 3px black;
@@ -572,67 +573,67 @@ footer .navegador-footer span a:hover {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 30vh 70vh auto 25vh;
   }
-  .navegador ul {
+  body .navegador ul {
     flex-direction: column;
     flex-wrap: nowrap;
   }
-  .navegador ul li {
+  body .navegador ul li {
     margin: 2%;
   }
-  .navegador ul li a {
+  body .navegador ul li a {
     font-size: 1rem;
   }
-  .navegador ul li a:hover {
+  body .navegador ul li a:hover {
     padding: 5px;
   }
-  h1 {
+  body h1 {
     font-size: 40px;
   }
-  h2 {
+  body h2 {
     font-size: 25px;
   }
-  .main-inicio .caja-canciones {
+  body .main-inicio .caja-canciones {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(11, 1fr);
   }
-  .main-inicio .caja-canciones iframe {
+  body .main-inicio .caja-canciones iframe {
     width: 100%;
     height: 80px;
   }
-  .main-inicio .texto-canciones {
+  body .main-inicio .texto-canciones {
     font-size: 38px;
     margin-left: 20px;
   }
-  .main-nosotros h2 {
+  body .main-nosotros h2 {
     text-align: left;
     font-size: 40px;
     font-weight: 400;
   }
-  .main-nosotros .texto-nosotros {
+  body .main-nosotros .texto-nosotros {
     margin-top: 30px;
     font-size: 17px;
     letter-spacing: 1.3px;
     line-height: 25px;
   }
-  .main-nosotros .texto-nosotros p {
+  body .main-nosotros .texto-nosotros p {
     margin-bottom: 10px;
   }
-  .main-servicios {
+  body .main-servicios {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto 25vh auto auto;
     margin: 5% 5%;
   }
-  .main-servicios .titulo-promocion {
+  body .main-servicios .titulo-promocion {
     font-size: 35px;
     line-height: 50px;
   }
-  .main-servicios .texto-promocion {
+  body .main-servicios .texto-promocion {
     text-align: left;
     font-size: 12px;
     letter-spacing: 1px;
     line-height: 13px;
   }
-  .main-servicios .enviar-dos {
+  body .main-servicios .enviar-dos {
     grid-area: enviar-dos;
     background-color: #633ea3;
     display: flex;
@@ -640,61 +641,61 @@ footer .navegador-footer span a:hover {
     justify-content: center;
     align-items: center;
   }
-  .main-servicios .enviar-dos a {
+  body .main-servicios .enviar-dos a {
     padding: 3%;
     color: white;
     font-size: 1.3rem;
   }
-  .main-servicios .enviar-dos a:hover {
+  body .main-servicios .enviar-dos a:hover {
     padding: 4%;
     font-size: 1.4rem;
   }
-  .main-servicios .titulo-curador {
+  body .main-servicios .titulo-curador {
     font-size: 35px;
     line-height: 50px;
   }
-  .main-servicios .texto-curador {
+  body .main-servicios .texto-curador {
     text-align: right;
     font-size: 12px;
     letter-spacing: 1px;
     line-height: 13px;
   }
-  .main-playlist {
+  body .main-playlist {
     background-size: 100%;
   }
-  .main-playlist h2 {
+  body .main-playlist h2 {
     font-size: 25Px;
   }
-  .main-playlist .indice-playlist ul {
+  body .main-playlist .indice-playlist ul {
     display: grid;
     grid-template-columns: repeat(2, 45%);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
   }
-  .main-playlist .indice-playlist ul li {
+  body .main-playlist .indice-playlist ul li {
     display: flex;
     justify-content: space-evenly;
     margin-top: 20px;
     margin-bottom: 0px;
   }
-  .main-playlist .indice-playlist ul li a {
+  body .main-playlist .indice-playlist ul li a {
     font-size: 1.1rem;
   }
-  .main-playlist .caja-playlist h3 {
+  body .main-playlist .contenedor-playlist .caja-playlist h3 a {
+    font-size: 20px;
+  }
+  body .main-contacto h2 {
     font-size: 25px;
   }
-  .main-contacto h2 {
-    font-size: 25px;
-  }
-  footer .volver-arriba a {
+  body footer .volver-arriba a {
     font-size: 13px;
   }
-  footer .navegador-footer span a {
+  body footer .navegador-footer span a {
     font-size: 10px;
     padding-left: 10px;
     padding-right: 10px;
   }
-  footer .navegador-footer span a:hover {
+  body footer .navegador-footer span a:hover {
     padding: 11px;
   }
 }
@@ -705,75 +706,75 @@ footer .navegador-footer span a:hover {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 25vh 60vh auto 25vh;
   }
-  .enviar {
+  body .enviar {
     padding-right: 4%;
   }
-  .enviar a {
+  body .enviar a {
     padding: 4%;
     font-size: 1rem;
   }
-  .enviar a:hover {
+  body .enviar a:hover {
     padding: 5%;
     font-size: 1.1rem;
   }
-  h1 {
+  body h1 {
     font-size: 35px;
   }
-  h2 {
+  body h2 {
     font-size: 20px;
   }
-  .logo-bekypequi {
+  body .logo-bekypequi {
     width: 100PX;
     height: 100PX;
   }
-  .logo-bekypequi:hover {
+  body .logo-bekypequi:hover {
     width: 105px;
     height: 105px;
   }
-  .subtitulo {
+  body .subtitulo {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
   }
-  .main-inicio .caja-canciones {
+  body .main-inicio .caja-canciones {
     padding: 30px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(11, 1fr);
   }
-  .main-inicio .caja-canciones iframe {
+  body .main-inicio .caja-canciones iframe {
     width: 100%;
     height: 80px;
   }
-  .main-inicio .texto-canciones {
+  body .main-inicio .texto-canciones {
     font-size: 25px;
     margin-left: 20px;
   }
-  .main-nosotros {
+  body .main-nosotros {
     margin: 5% 10%;
   }
-  .main-nosotros h2 {
+  body .main-nosotros h2 {
     text-align: left;
     font-size: 30px;
     font-weight: 400;
   }
-  .main-nosotros .texto-nosotros {
+  body .main-nosotros .texto-nosotros {
     margin-top: 30px;
     font-size: 15px;
     letter-spacing: 1.3px;
     line-height: 25px;
   }
-  .main-nosotros .texto-nosotros p {
+  body .main-nosotros .texto-nosotros p {
     margin-bottom: 10px;
   }
-  .main-servicios {
+  body .main-servicios {
     grid-template-areas: "titulo-promocion titulo-promocion" "texto-promocion texto-promocion" "imagen-promocion imagen-promocion" "enviar-dos enviar-dos" "titulo-curador titulo-curador" "texto-curador texto-curador" "imagen-curador imagen-curador";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto 20vh auto auto;
     margin: 5% 5%;
   }
-  .main-servicios .titulo-promocion {
+  body .main-servicios .titulo-promocion {
     font-size: 35px;
     line-height: 50px;
     flex-direction: row;
@@ -781,18 +782,18 @@ footer .navegador-footer span a:hover {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .main-servicios .texto-promocion {
+  body .main-servicios .texto-promocion {
     text-align: justify;
     font-size: 12px;
     letter-spacing: 1px;
     line-height: 13px;
     padding: 5px 20px;
   }
-  .main-servicios .imagen-promocion {
+  body .main-servicios .imagen-promocion {
     grid-area: imagen-promocion;
     display: none;
   }
-  .main-servicios .enviar-dos {
+  body .main-servicios .enviar-dos {
     grid-area: enviar-dos;
     background-color: #633ea3;
     display: flex;
@@ -800,71 +801,74 @@ footer .navegador-footer span a:hover {
     justify-content: center;
     align-items: center;
   }
-  .main-servicios .enviar-dos a {
+  body .main-servicios .enviar-dos a {
     padding: 3%;
     color: white;
     font-size: 1rem;
   }
-  .main-servicios .enviar-dos a:hover {
+  body .main-servicios .enviar-dos a:hover {
     padding: 4%;
     font-size: 1.2rem;
   }
-  .main-servicios .titulo-curador {
+  body .main-servicios .titulo-curador {
     padding-left: 20px;
     padding-right: 20px;
     font-size: 35px;
     line-height: 50px;
   }
-  .main-servicios .texto-curador {
+  body .main-servicios .texto-curador {
     text-align: justify;
     font-size: 12px;
     letter-spacing: 1px;
     line-height: 13px;
     padding: 5px 20px;
   }
-  .main-servicios .imagen-curador {
+  body .main-servicios .imagen-curador {
     grid-area: imagen-curador;
     display: none;
   }
-  .main-playlist {
+  body .main-playlist {
     background-image: linear-gradient(#633ea3, #633ea3);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 80%;
     background-attachment: fixed;
     margin-bottom: 7%;
+    margin-top: 10px;
   }
-  .main-playlist h2 {
+  body .main-playlist h2 {
     font-size: 25Px;
+    padding-top: 10px;
   }
-  .main-playlist .indice-playlist ul {
+  body .main-playlist .indice-playlist ul {
     display: grid;
     grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(13, 1fr);
     grid-column-gap: 30px;
   }
-  .main-playlist .indice-playlist ul li {
+  body .main-playlist .indice-playlist ul li {
     margin-top: 20px;
     margin-bottom: 0px;
   }
-  .main-playlist .indice-playlist ul li a {
+  body .main-playlist .indice-playlist ul li a {
     font-size: 1rem;
   }
-  .main-playlist .caja-playlist {
+  body .main-playlist .contenedor-playlist .caja-playlist {
     height: 100vh;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
     margin-bottom: 3%;
+    text-align: center;
   }
-  .main-playlist .caja-playlist h3 {
+  body .main-playlist .contenedor-playlist .caja-playlist h3 a {
     margin-top: 3%;
-    font-size: 17px;
+    font-size: 15px;
   }
-  .main-contacto h2 {
+  body .main-contacto h2 {
     font-size: 25Px;
   }
-  footer {
+  body footer {
     background-image: linear-gradient(to top, #633ea3, #633ea3);
     padding-top: 10px;
     padding-bottom: 10px;
@@ -875,31 +879,31 @@ footer .navegador-footer span a:hover {
     grid-template-rows: 10% 80% 10%;
     grid-row-gap: 20px;
   }
-  footer .volver-arriba {
+  body footer .volver-arriba {
     display: flex;
     justify-content: center;
     grid-area: volver;
   }
-  footer .volver-arriba a {
+  body footer .volver-arriba a {
     font-size: 13px;
   }
-  footer .redes-footer {
+  body footer .redes-footer {
     grid-area: redes;
     display: flex;
     justify-content: center;
     margin-top: 20px;
   }
-  footer .redes-footer a {
+  body footer .redes-footer a {
     margin: 10px;
   }
-  footer .navegador-footer {
+  body footer .navegador-footer {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     grid-area: menu;
   }
-  footer .navegador-footer span a {
+  body footer .navegador-footer span a {
     color: white;
     font-weight: 100;
     font-size: 10px;
@@ -907,7 +911,7 @@ footer .navegador-footer span a:hover {
     padding-right: 10px;
     border-left: 0px solid white;
   }
-  footer .navegador-footer span a:hover {
+  body footer .navegador-footer span a:hover {
     color: orangered;
   }
 }
