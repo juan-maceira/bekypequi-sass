@@ -14,69 +14,65 @@
             text-align: left;
             font-size: 80px;
             font-weight: 400;
-        }    
+        }
+        .texto-nosotros {
+            margin-top: 30px;
+            font-size: 25px;
+           letter-spacing:1.3px; 
+           line-height: 40px;
+       }    
     }
         
-    .texto-nosotros {
-         margin-top: 30px;
-         font-size: 25px;
-        letter-spacing:1.3px; 
-        line-height: 40px;
-    }
+    
         
     .main-servicios {
          grid-template-columns: 1fr 1fr;
          grid-template-rows: auto auto 30vh auto auto;
-         margin: 5% 5%;        
-    }
-    
-    .titulo-promocion {
-        font-size:65px;
-        line-height: 90px;      
-    }
-    
-    .texto-promocion {
-        font-size: 17px;
-        letter-spacing:1px; 
-        line-height: 26px;       
-    }
-    
-    .enviar-dos {
-        grid-area: enviar-dos;
-        background-color: #633ea3;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content:center;
-        align-items: center;
-        a {
-            padding: 3%;
-            color: white;
-            font-size: 1.3rem;
-            background-color: orangered;
-            border-radius: 5px;
-            transition: all 0.5s ease;
-            &:hover {
-                padding: 4%;
-                font-size: 1.4rem;
-                color: white;
-                background-color: #673ab7;
-                box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
-                -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
-                -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);  
-            } 
+         margin: 5% 5%;
+         .titulo-promocion {
+            font-size:65px;
+            line-height: 90px;      
         }
-    }
-    
-    .titulo-curador {
-        font-size: 60px; 
-        line-height: 90px; 
-    }
-    
-    .texto-curador {       
-        font-size: 17px;        
-        letter-spacing:1px; 
-        line-height: 28px;    
-    }
+        .texto-promocion {
+            font-size: 17px;
+            letter-spacing:1px; 
+            line-height: 26px;       
+        }
+        .enviar-dos {
+            grid-area: enviar-dos;
+            background-color: #633ea3;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content:center;
+            align-items: center;
+            a {
+                padding: 3%;
+                color: white;
+                font-size: 1.3rem;
+                background-color: orangered;
+                border-radius: 5px;
+                transition: all 0.5s ease;
+                &:hover {
+                    padding: 4%;
+                    font-size: 1.4rem;
+                    color: white;
+                    background-color: #673ab7;
+                    box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+                    -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+                    -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);  
+                } 
+            }
+        }
+        .titulo-curador {
+            font-size: 60px; 
+            line-height: 90px; 
+        }
+        .texto-curador {       
+            font-size: 17px;        
+            letter-spacing:1px; 
+            line-height: 28px;    
+        }        
+    }    
 }    
     
     
@@ -116,9 +112,13 @@
     }
     
     .main-inicio {
-        P { 
-            font-size: 22px;
-        }      
+        .caja-canciones {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(8, 1fr);       
+        }
+        .texto-canciones {
+            font-size: 50px;  
+        }       
     }
     
     .main-nosotros {
@@ -126,73 +126,61 @@
             text-align: left;
             font-size: 60px;
             font-weight: 400;
+        }
+        .texto-nosotros {
+            margin-top: 30px;
+            font-size: 20px;
+            letter-spacing:1.3px; 
+            line-height: 30px;
         }    
     }
         
-    .texto-nosotros {
-        margin-top: 30px;
-        font-size: 20px;
-        letter-spacing:1.3px; 
-        line-height: 30px;
-    }
-    
     .main-servicios {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto 25vh auto auto;
-        margin: 5% 5%;        
-    }
-    
-    .titulo-promocion {
-        font-size:55px;
-        line-height: 70px;      
-    }
-    
-    .texto-promocion {
-        font-size: 14px;
-        letter-spacing:1px; 
-        line-height: 20px;       
-    }
-    
-    .enviar-dos {
-        grid-area: enviar-dos;
-         background-color: #633ea3;
-         display: flex;
-        flex-wrap: nowrap;
-        justify-content:center;
-        align-items: center;
-        a {
-            padding: 3%;
-            color: white;
-            font-size: 1.3rem;
-            &:hover {
-                padding: 4%;
-                font-size: 1.4rem; 
+        margin: 5% 5%;
+        .titulo-promocion {
+            font-size:55px;
+            line-height: 70px;      
+        }
+        .texto-promocion {
+            font-size: 14px;
+            letter-spacing:1px; 
+            line-height: 20px;       
+        }
+        .enviar-dos {
+            grid-area: enviar-dos;
+             background-color: #633ea3;
+             display: flex;
+            flex-wrap: nowrap;
+            justify-content:center;
+            align-items: center;
+            a {
+                padding: 3%;
+                color: white;
+                font-size: 1.3rem;
+                &:hover {
+                    padding: 4%;
+                    font-size: 1.4rem; 
+                }
             }
         }
+        .titulo-curador {
+            font-size: 50px;
+            line-height: 70px;  
+        }
+        
+        .texto-curador {       
+            font-size: 14px;        
+            letter-spacing:1px; 
+            line-height: 21px;    
+        }        
     }
-    
-    .titulo-curador {
-        font-size: 50px;
-        line-height: 70px;  
-    }
-    
-    .texto-curador {       
-        font-size: 14px;        
-        letter-spacing:1px; 
-        line-height: 21px;    
-    }
-    
     .main-contacto {
         h2 {
             font-size: 30px;
         }   
     }
-    
-    .caja-canciones {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(8, 1fr);       
-    }
-    
     .indice-playlist {
         ul {
             grid-template-columns: repeat(3, 23%);
@@ -220,10 +208,6 @@
             }
         }
     }
-    
-    .texto-canciones {
-        font-size: 50px;  
-    }   
 }
     
     
@@ -271,9 +255,18 @@
     }
     
     .main-inicio {
-        p {
-            font-size: 20px;
-        }   
+        .caja-canciones {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(11, 1fr);
+            iframe {
+                width: 100%;
+                height: 80px;
+            }
+        }
+        .texto-canciones {
+            font-size: 38px;
+            margin-left: 20px;
+        }    
     }
     
     .main-nosotros {
@@ -281,68 +274,60 @@
             text-align: left;
             font-size: 40px;
             font-weight: 400;
+        }
+        .texto-nosotros {
+            margin-top: 30px;
+            font-size: 17px;
+            letter-spacing:1.3px; 
+            line-height: 25px;
+            p {
+                margin-bottom: 10px;
+            }
         }    
     }
-        
-    .texto-nosotros {
-        margin-top: 30px;
-        font-size: 17px;
-        letter-spacing:1.3px; 
-        line-height: 25px;
-        p {
-            margin-bottom: 10px;
-        }
-    }
-    
     .main-servicios {
          grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto 25vh auto auto;
-         margin: 5% 5%;        
-    }
-    
-    .titulo-promocion {
-        font-size:35px;
-        line-height: 50px;      
-    }
-    
-    .texto-promocion {
-        text-align: left;
-        font-size: 12px;
-        letter-spacing:1px; 
-        line-height: 13px;       
-    }
-    
-    .enviar-dos {
-        grid-area: enviar-dos;
-        background-color: #633ea3;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content:center;
-        align-items: center;
-        a {
-            padding: 3%;
-            color: white;
-            font-size: 1.3rem;
-            &:hover {
-                padding: 4%;
-                font-size: 1.4rem; 
-            }
-        
+         margin: 5% 5%;
+         .titulo-promocion {
+            font-size:35px;
+            line-height: 50px;      
         }
+        .texto-promocion {
+            text-align: left;
+            font-size: 12px;
+            letter-spacing:1px; 
+            line-height: 13px;       
+        }
+        .enviar-dos {
+            grid-area: enviar-dos;
+            background-color: #633ea3;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content:center;
+            align-items: center;
+            a {
+                padding: 3%;
+                color: white;
+                font-size: 1.3rem;
+                &:hover {
+                    padding: 4%;
+                    font-size: 1.4rem; 
+                }
+            
+            }
+        }
+        .titulo-curador {
+            font-size: 35px;
+            line-height: 50px;   
+        }
+        .texto-curador { 
+            text-align: right;      
+            font-size: 12px;        
+            letter-spacing:1px; 
+            line-height: 13px;
+        }        
     }
-    
-    .titulo-curador {
-        font-size: 35px;
-        line-height: 50px;   
-    }
-    
-    .texto-curador { 
-        text-align: right;      
-        font-size: 12px;        
-        letter-spacing:1px; 
-        line-height: 13px;
-    }
-    
     .main-playlist {
         background-size: 100%;
         h2 {
@@ -371,50 +356,31 @@
             }
         }
     }    
-    
-    .main-canciones {
-        h2 {
-            font-size: 25Px;
-        }  
-    }
-    
+     
     .main-contacto {
         h2 {
             font-size: 25px;
         }
     }  
-    .caja-canciones {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(11, 1fr);
-        iframe {
-            width: 100%;
-            height: 80px;
-        }      
-    }    
-       
-    .texto-canciones {
-        font-size: 38px;
-        margin-left: 20px;
-    }
-    
-    .volver-arriba {
-        a {
-            font-size: 13px;
-        }
-    }
-    
-    .navegador-footer {
-        span {
+           
+    footer {
+        .volver-arriba {
             a {
-                font-size: 10px;
-                padding-left: 10px;
-                padding-right: 10px;
-                &:hover {
-                    padding: 11px;
-                }
-            }   
+                font-size: 13px;
+            }
+        }       
+        .navegador-footer {
+            span {
+                a {
+                    font-size: 10px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    &:hover {
+                        padding: 11px;
+                    }
+                }   
+            }
         }
-    
     }
 }
     
@@ -479,11 +445,20 @@
     }
     
     .main-inicio {
-        p {
-            padding-left: 15px;
-            padding-right: 15px;
-            font-size: 17px;
-        }    
+        .caja-canciones {
+            padding: 30px;       
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(11, 1fr);
+            iframe {
+                width: 100%;
+                height: 80px;
+            }       
+        }
+        .texto-canciones {
+            font-size: 25px;
+            margin-left: 20px;
+        }   
     }
 
     .main-nosotros {
@@ -493,21 +468,17 @@
             font-size: 30px;
             font-weight: 400;    
         }
-        
+        .texto-nosotros {
+            margin-top: 30px;
+            font-size: 15px;
+            letter-spacing:1.3px; 
+            line-height: 25px;
+            p {
+                margin-bottom: 10px;
+            }    
     }
-
-    .texto-nosotros {
-        margin-top: 30px;
-        font-size: 15px;
-        letter-spacing:1.3px; 
-        line-height: 25px;
-        p {
-            margin-bottom: 10px;
-        }
-    }
-
     
-
+    }
     .main-servicios {
         grid-template-areas: 
         "titulo-promocion titulo-promocion"
@@ -575,13 +546,6 @@
             display: none;
         }        
     }
-
-
-
-   
-
-   
-
     .main-playlist {
         background-image: linear-gradient(#633ea3, #633ea3);
         background-position: center;
@@ -624,23 +588,6 @@
         h2 {
             font-size: 25Px;
         }
-    }
-
-   
-    .caja-canciones {
-        padding: 30px;       
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(11, 1fr);
-        iframe {
-            width: 100%;
-            height: 80px;
-        }       
-    }
-    
-    .texto-canciones {
-        font-size: 25px;
-        margin-left: 20px;
     }
 
     footer { 

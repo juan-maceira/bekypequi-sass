@@ -404,7 +404,7 @@ footer .navegador-footer span a:hover {
     font-size: 80px;
     font-weight: 400;
   }
-  .texto-nosotros {
+  .main-nosotros .texto-nosotros {
     margin-top: 30px;
     font-size: 25px;
     letter-spacing: 1.3px;
@@ -415,16 +415,16 @@ footer .navegador-footer span a:hover {
     grid-template-rows: auto auto 30vh auto auto;
     margin: 5% 5%;
   }
-  .titulo-promocion {
+  .main-servicios .titulo-promocion {
     font-size: 65px;
     line-height: 90px;
   }
-  .texto-promocion {
+  .main-servicios .texto-promocion {
     font-size: 17px;
     letter-spacing: 1px;
     line-height: 26px;
   }
-  .enviar-dos {
+  .main-servicios .enviar-dos {
     grid-area: enviar-dos;
     background-color: #633ea3;
     display: flex;
@@ -432,7 +432,7 @@ footer .navegador-footer span a:hover {
     justify-content: center;
     align-items: center;
   }
-  .enviar-dos a {
+  .main-servicios .enviar-dos a {
     padding: 3%;
     color: white;
     font-size: 1.3rem;
@@ -440,7 +440,7 @@ footer .navegador-footer span a:hover {
     border-radius: 5px;
     transition: all 0.5s ease;
   }
-  .enviar-dos a:hover {
+  .main-servicios .enviar-dos a:hover {
     padding: 4%;
     font-size: 1.4rem;
     color: white;
@@ -449,11 +449,11 @@ footer .navegador-footer span a:hover {
     -webkit-box-shadow: 1px 4px 39px -4px rgba(0, 0, 0, 0.67);
     -moz-box-shadow: 1px 4px 39px -4px rgba(0, 0, 0, 0.67);
   }
-  .titulo-curador {
+  .main-servicios .titulo-curador {
     font-size: 60px;
     line-height: 90px;
   }
-  .texto-curador {
+  .main-servicios .texto-curador {
     font-size: 17px;
     letter-spacing: 1px;
     line-height: 28px;
@@ -478,15 +478,19 @@ footer .navegador-footer span a:hover {
     padding: 3.5%;
     font-size: 1.3rem;
   }
-  .main-inicio P {
-    font-size: 22px;
+  .main-inicio .caja-canciones {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+  .main-inicio .texto-canciones {
+    font-size: 50px;
   }
   .main-nosotros h2 {
     text-align: left;
     font-size: 60px;
     font-weight: 400;
   }
-  .texto-nosotros {
+  .main-nosotros .texto-nosotros {
     margin-top: 30px;
     font-size: 20px;
     letter-spacing: 1.3px;
@@ -497,16 +501,16 @@ footer .navegador-footer span a:hover {
     grid-template-rows: auto auto 25vh auto auto;
     margin: 5% 5%;
   }
-  .titulo-promocion {
+  .main-servicios .titulo-promocion {
     font-size: 55px;
     line-height: 70px;
   }
-  .texto-promocion {
+  .main-servicios .texto-promocion {
     font-size: 14px;
     letter-spacing: 1px;
     line-height: 20px;
   }
-  .enviar-dos {
+  .main-servicios .enviar-dos {
     grid-area: enviar-dos;
     background-color: #633ea3;
     display: flex;
@@ -514,30 +518,26 @@ footer .navegador-footer span a:hover {
     justify-content: center;
     align-items: center;
   }
-  .enviar-dos a {
+  .main-servicios .enviar-dos a {
     padding: 3%;
     color: white;
     font-size: 1.3rem;
   }
-  .enviar-dos a:hover {
+  .main-servicios .enviar-dos a:hover {
     padding: 4%;
     font-size: 1.4rem;
   }
-  .titulo-curador {
+  .main-servicios .titulo-curador {
     font-size: 50px;
     line-height: 70px;
   }
-  .texto-curador {
+  .main-servicios .texto-curador {
     font-size: 14px;
     letter-spacing: 1px;
     line-height: 21px;
   }
   .main-contacto h2 {
     font-size: 30px;
-  }
-  .caja-canciones {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(8, 1fr);
   }
   .indice-playlist ul {
     grid-template-columns: repeat(3, 23%);
@@ -563,9 +563,6 @@ footer .navegador-footer span a:hover {
     border-color: white;
     text-shadow: 3px 3px 3px black;
     padding: 4% 7%;
-  }
-  .texto-canciones {
-    font-size: 50px;
   }
 }
 /*####################### TABLET 481 / 767 #######################*/
@@ -594,21 +591,30 @@ footer .navegador-footer span a:hover {
   h2 {
     font-size: 25px;
   }
-  .main-inicio p {
-    font-size: 20px;
+  .main-inicio .caja-canciones {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+  }
+  .main-inicio .caja-canciones iframe {
+    width: 100%;
+    height: 80px;
+  }
+  .main-inicio .texto-canciones {
+    font-size: 38px;
+    margin-left: 20px;
   }
   .main-nosotros h2 {
     text-align: left;
     font-size: 40px;
     font-weight: 400;
   }
-  .texto-nosotros {
+  .main-nosotros .texto-nosotros {
     margin-top: 30px;
     font-size: 17px;
     letter-spacing: 1.3px;
     line-height: 25px;
   }
-  .texto-nosotros p {
+  .main-nosotros .texto-nosotros p {
     margin-bottom: 10px;
   }
   .main-servicios {
@@ -616,17 +622,17 @@ footer .navegador-footer span a:hover {
     grid-template-rows: auto auto 25vh auto auto;
     margin: 5% 5%;
   }
-  .titulo-promocion {
+  .main-servicios .titulo-promocion {
     font-size: 35px;
     line-height: 50px;
   }
-  .texto-promocion {
+  .main-servicios .texto-promocion {
     text-align: left;
     font-size: 12px;
     letter-spacing: 1px;
     line-height: 13px;
   }
-  .enviar-dos {
+  .main-servicios .enviar-dos {
     grid-area: enviar-dos;
     background-color: #633ea3;
     display: flex;
@@ -634,20 +640,20 @@ footer .navegador-footer span a:hover {
     justify-content: center;
     align-items: center;
   }
-  .enviar-dos a {
+  .main-servicios .enviar-dos a {
     padding: 3%;
     color: white;
     font-size: 1.3rem;
   }
-  .enviar-dos a:hover {
+  .main-servicios .enviar-dos a:hover {
     padding: 4%;
     font-size: 1.4rem;
   }
-  .titulo-curador {
+  .main-servicios .titulo-curador {
     font-size: 35px;
     line-height: 50px;
   }
-  .texto-curador {
+  .main-servicios .texto-curador {
     text-align: right;
     font-size: 12px;
     letter-spacing: 1px;
@@ -677,33 +683,18 @@ footer .navegador-footer span a:hover {
   .main-playlist .caja-playlist h3 {
     font-size: 25px;
   }
-  .main-canciones h2 {
-    font-size: 25Px;
-  }
   .main-contacto h2 {
     font-size: 25px;
   }
-  .caja-canciones {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(11, 1fr);
-  }
-  .caja-canciones iframe {
-    width: 100%;
-    height: 80px;
-  }
-  .texto-canciones {
-    font-size: 38px;
-    margin-left: 20px;
-  }
-  .volver-arriba a {
+  footer .volver-arriba a {
     font-size: 13px;
   }
-  .navegador-footer span a {
+  footer .navegador-footer span a {
     font-size: 10px;
     padding-left: 10px;
     padding-right: 10px;
   }
-  .navegador-footer span a:hover {
+  footer .navegador-footer span a:hover {
     padding: 11px;
   }
 }
@@ -745,10 +736,19 @@ footer .navegador-footer span a:hover {
     justify-content: space-evenly;
     align-items: center;
   }
-  .main-inicio p {
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 17px;
+  .main-inicio .caja-canciones {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+  }
+  .main-inicio .caja-canciones iframe {
+    width: 100%;
+    height: 80px;
+  }
+  .main-inicio .texto-canciones {
+    font-size: 25px;
+    margin-left: 20px;
   }
   .main-nosotros {
     margin: 5% 10%;
@@ -758,13 +758,13 @@ footer .navegador-footer span a:hover {
     font-size: 30px;
     font-weight: 400;
   }
-  .texto-nosotros {
+  .main-nosotros .texto-nosotros {
     margin-top: 30px;
     font-size: 15px;
     letter-spacing: 1.3px;
     line-height: 25px;
   }
-  .texto-nosotros p {
+  .main-nosotros .texto-nosotros p {
     margin-bottom: 10px;
   }
   .main-servicios {
@@ -863,20 +863,6 @@ footer .navegador-footer span a:hover {
   }
   .main-contacto h2 {
     font-size: 25Px;
-  }
-  .caja-canciones {
-    padding: 30px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(11, 1fr);
-  }
-  .caja-canciones iframe {
-    width: 100%;
-    height: 80px;
-  }
-  .texto-canciones {
-    font-size: 25px;
-    margin-left: 20px;
   }
   footer {
     background-image: linear-gradient(to top, #633ea3, #633ea3);
