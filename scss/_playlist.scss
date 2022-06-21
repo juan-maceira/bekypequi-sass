@@ -1,4 +1,7 @@
 .main-playlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url(../recursos/pexels-dids-1644616.jpg);
     background-position: center;
     background-repeat: no-repeat; 
@@ -14,6 +17,7 @@
         ul {
         display: grid; 
         grid-template-columns: repeat(3, 20%);
+        grid-template-rows: repeat(5, 1fr);
         justify-content: center;
         grid-column-gap: 30px;
         li { 
@@ -39,6 +43,21 @@
             }
         }
     }
+    .volver-arriba {
+        margin-top: 5vh;
+        display: flex;
+        justify-content: center;
+        a {
+            font-size: 16px;
+            text-align: center;
+            color: white;
+            font-weight: 200;
+            transition: all 0.5s ease;
+            &:hover {
+                color: black; 
+            }
+        }
+    }  
     .contenedor-playlist {
         display: flex;
         flex-direction: column;

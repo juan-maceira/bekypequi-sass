@@ -176,7 +176,7 @@ footer .navegador-footer span a:hover {
 .main-inicio {
   display: flex;
   flex-direction: column;
-  margin-top: 2vh;
+  margin-top: 8vh;
   margin-bottom: 6vh;
 }
 .main-inicio .texto-canciones {
@@ -196,7 +196,10 @@ footer .navegador-footer span a:hover {
 .main-inicio .caja-canciones iframe {
   width: 100%;
   height: 80px;
-  border-radius: 12px;
+  border-radius: 10px;
+  box-shadow: -1px -1px 7px 6px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: -1px -1px 7px 6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: -1px -1px 7px 6px rgba(0, 0, 0, 0.16);
 }
 
 .main-nosotros h2 {
@@ -307,6 +310,9 @@ footer .navegador-footer span a:hover {
 }
 
 .main-playlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url(../recursos/pexels-dids-1644616.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -322,6 +328,7 @@ footer .navegador-footer span a:hover {
 .main-playlist .indice-playlist ul {
   display: grid;
   grid-template-columns: repeat(3, 20%);
+  grid-template-rows: repeat(5, 1fr);
   justify-content: center;
   grid-column-gap: 30px;
 }
@@ -345,6 +352,21 @@ footer .navegador-footer span a:hover {
   background-color: rgb(23, 139, 23);
   border-color: white;
   text-shadow: 3px 3px 3px black;
+}
+.main-playlist .volver-arriba {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+}
+.main-playlist .volver-arriba a {
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  font-weight: 200;
+  transition: all 0.5s ease;
+}
+.main-playlist .volver-arriba a:hover {
+  color: black;
 }
 .main-playlist .contenedor-playlist {
   display: flex;
@@ -463,13 +485,13 @@ footer .navegador-footer span a:hover {
 /*############# TABLET 768 / 1023  ##################*/
 @media (min-width: 768px) and (max-width: 992px) {
   body {
-    grid-template-areas: "navegador" "enviar" "header" "main" "footer";
+    grid-template-areas: "enviar navegador" "header header" "main main" "footer footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 15vh 15vh 70vh auto 25vh;
+    grid-template-rows: 15vh 50vh auto 25vh;
   }
   body .enviar {
-    justify-content: center;
-    padding-left: 0;
+    justify-content: left;
+    padding-left: 2%;
   }
   body .enviar a {
     padding: 3%;
@@ -569,13 +591,9 @@ footer .navegador-footer span a:hover {
 /*####################### TABLET 481 / 767 #######################*/
 @media (min-width: 481px) and (max-width: 767px) {
   body {
-    grid-template-areas: "navegador enviar" "header header" "main main" "footer footer";
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 30vh 70vh auto 25vh;
-  }
-  body .navegador ul {
-    flex-direction: column;
-    flex-wrap: nowrap;
+    grid-template-areas: "enviar navegador" "header header" "main main" "footer footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 50vh auto 25vh;
   }
   body .navegador ul li {
     margin: 2%;
@@ -628,7 +646,7 @@ footer .navegador-footer span a:hover {
     line-height: 50px;
   }
   body .main-servicios .texto-promocion {
-    text-align: left;
+    text-align: justify;
     font-size: 12px;
     letter-spacing: 1px;
     line-height: 13px;
@@ -655,7 +673,7 @@ footer .navegador-footer span a:hover {
     line-height: 50px;
   }
   body .main-servicios .texto-curador {
-    text-align: right;
+    text-align: justify;
     font-size: 12px;
     letter-spacing: 1px;
     line-height: 13px;
@@ -702,9 +720,9 @@ footer .navegador-footer span a:hover {
 /*############## SMARTPHONE 480 ####################*/
 @media (max-width: 480px) {
   body {
-    grid-template-areas: "navegador enviar" "header header" "main main" "footer footer";
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 25vh 60vh auto 25vh;
+    grid-template-areas: "enviar navegador" "header header" "main main" "footer footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 45vh auto 25vh;
   }
   body .enviar {
     padding-right: 4%;
