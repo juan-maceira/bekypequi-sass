@@ -353,19 +353,19 @@ footer .navegador-footer span a:hover {
   border-color: white;
   text-shadow: 3px 3px 3px black;
 }
-.main-playlist .volver-arriba {
+.main-playlist .volver {
   margin-top: 5vh;
   display: flex;
   justify-content: center;
 }
-.main-playlist .volver-arriba a {
+.main-playlist .volver a {
   font-size: 16px;
   text-align: center;
   color: white;
   font-weight: 200;
   transition: all 0.5s ease;
 }
-.main-playlist .volver-arriba a:hover {
+.main-playlist .volver a:hover {
   color: black;
 }
 .main-playlist .contenedor-playlist {
