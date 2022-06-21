@@ -9,7 +9,7 @@
             }
         }
     }  
-     .main-nosotros {
+    .main-nosotros {
         h2 {
             text-align: left;
             font-size: 80px;
@@ -89,16 +89,15 @@
 @media (min-width: 768px) and (max-width: 992px) {
     body {           
         grid-template-areas:
-        "navegador"
-        "enviar" 
-        "header"
-        "main" 
-        "footer";
+        "enviar navegador" 
+        "header header"
+        "main main" 
+        "footer footer";
         grid-template-columns: 1fr;
-        grid-template-rows: 15vh 15vh 70vh auto 25vh;
+        grid-template-rows: 15vh 50vh auto 25vh;
         .enviar {
-            justify-content: center;
-            padding-left: 0;
+            justify-content: left;
+            padding-left: 2%;
             a {
                 padding: 3%;
                 font-size: 1.2rem;
@@ -221,16 +220,15 @@
 @media (min-width: 481px) and (max-width: 767px) {
     body {    
         grid-template-areas:
-        "navegador enviar"
+        "enviar navegador"
         "header header" 
         "main main" 
         "footer footer";
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows:  30vh 70vh  auto 25vh;
+        grid-template-columns: 1fr;
+        grid-template-rows:  15vh 50vh  auto 25vh;
         .navegador {
             ul {
-                flex-direction: column;
-                flex-wrap: nowrap;
+                
                 li {
                     margin: 2%;
                     a {
@@ -291,7 +289,7 @@
                 line-height: 50px;      
             }
             .texto-promocion {
-                text-align: left;
+                text-align: justify;
                 font-size: 12px;
                 letter-spacing:1px; 
                 line-height: 13px;       
@@ -319,7 +317,7 @@
                 line-height: 50px;   
             }
             .texto-curador { 
-                text-align: right;      
+                text-align: justify;      
                 font-size: 12px;        
                 letter-spacing:1px; 
                 line-height: 13px;
@@ -400,12 +398,12 @@
 @media (max-width: 480px) {
     body {    
         grid-template-areas:
-        "navegador enviar"
+        "enviar navegador"
         "header header" 
         "main main" 
         "footer footer";
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows:  25vh 60vh auto 25vh;
+        grid-template-columns: 1fr;
+        grid-template-rows:  15vh 45vh auto 25vh;
         .enviar {
             padding-right:4%;
             a {
